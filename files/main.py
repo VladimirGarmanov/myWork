@@ -1,0 +1,6 @@
+file = open("file.txt", "w+",encoding="UTF-8")
+line = file.readline()
+lines = file.readlines()
+lines.insert(1,"999\n")
+s = "".join(lines)
+file.write(s)

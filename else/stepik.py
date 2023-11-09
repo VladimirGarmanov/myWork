@@ -1,0 +1,11 @@
+numbers = []
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+numbers.append(a)
+numbers.append(b)
+numbers.append(c)
+numbers.append(d)
+print(f'Наименьшее число = {min(numbers)} ')
+print(f'Наибольшее число = {max(numbers)} ')
