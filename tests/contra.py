@@ -1,25 +1,5 @@
-N = int(input())
-M = int(input())
-summa = 0
-number = []
-k = 1
-if (N*(N+1))/2 >= M:
-   while summa < N:
-      for a in range(k, N):
-         summa += a
-         number.append(a)
-         if summa > N:
-            summa = 0
-            number.clear()
-         if summa == M:
-            for i in number:
-               print(i)
-            break
-      k += 1
-else:
-   print(0)
-
-
-
-
-
+for a in range(1,1000):
+   for b in range(1,1000):
+      for c in range(1,1000):
+         if (a*b)/c + (a*c)/b + (b*c)/a == 3:
+            print(a,b,c)
